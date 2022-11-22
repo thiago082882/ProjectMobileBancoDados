@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#272b2e"
+    tools:context=".banco.Banco">
+
+
+    <TextView
+        android:id="@+id/tvBanco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:textSize="35sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="@string/registro_banco"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edId"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="@android:color/white"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:ems="10"
+        android:hint="@string/id"
+        android:inputType="number"
+        android:paddingLeft="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnBuscar"
+        app:layout_constraintEnd_toStartOf="@+id/btnBuscar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edtNameBank"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@android:color/white"
+        android:ems="10"
+        android:hint="@string/nome_banco"
+        android:inputType="textPersonName"
+        android:maxLength="25"
+        android:paddingStart="5dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.262"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edId"
+        tools:ignore="RtlSymmetry" >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtNomeBanco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnBuscar"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="76dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:backgroundTint="@color/black"
+        android:background="@drawable/bg_btn"
+        android:text="@string/buscar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvBanco" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnInserir"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/inserir"
+        android:background="@drawable/bg_btn"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtNameBank" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnEditar"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/editar"
+        android:background="@drawable/bg_btn"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnInserir" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnExcluir"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/excluir"
+        android:background="@drawable/bg_btn"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEditar"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

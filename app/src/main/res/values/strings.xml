@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ProjectBank</string>
+    <string name="id">ID</string>
+    <string name="nome_banco">Nome Banco</string>
+    <string name="buscar">Buscar</string>
+    <string name="inserir">Inserir</string>
+    <string name="editar">Editar</string>
+    <string name="excluir">Excluir</string>
+    <string name="registro_banco">REGISTRO BANCO</string>
+    <string name="registro_conta">REGISTRO CONTA</string>
+    <string name="registro_logradouro">REGISTRO LOGRADOURO</string>
+</resources>
